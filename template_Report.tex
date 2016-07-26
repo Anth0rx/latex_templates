@@ -1,0 +1,37 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, amssymb, float, csquotes, xcolor, hyperref, sectsty}
+\usepackage[margin=1.5cm, a4paper]{geometry}
+\usepackage[ngerman]{babel}
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
+
+\definecolor{section}{HTML}{000099}
+\definecolor{subsection}{HTML}{0000FF}
+\definecolor{paragraph}{HTML}{4D4DFF}
+
+\renewcommand{\labelitemi}{\color{section}$\blacktriangleright$}
+
+\sectionfont{\color{section}}
+\subsectionfont{\color{subsection}}
+\paragraphfont{\color{paragraph}}
+
+\hypersetup{
+	colorlinks	= true,
+	citecolor	= gray,
+	linkcolor	= blue
+}
+
+\title{}
+\author{}
+
+\begin{document}
+
+	\maketitle
+	
+	\tableofcontents
+	
+	\listoffigures
+	
+	
+\end{document}
