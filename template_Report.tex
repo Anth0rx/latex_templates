@@ -1,21 +1,29 @@
 \documentclass[12pt, a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx, amssymb, float, csquotes, xcolor, hyperref, sectsty}
-\usepackage[margin=1.5cm, a4paper]{geometry}
-\usepackage[ngerman]{babel}
-\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage{graphicx,	% handle graphics and images
+			amssymb,	% handle mathematical symbols
+			float,		% handle floating objects (positioning tables and images)
+			csquotes,	% handle proper quotation
+			xcolor,		% handle colors
+			hyperref,	% handle references
+			sectsty}	% control sectional headers
+		
+\usepackage[margin=1.5cm]{geometry}						% set format of paper
+\usepackage[ngerman]{babel}								% support german language
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}	% support proper german hyphenatation
 
+% define sectional header colors
 \definecolor{section}{HTML}{000099}
 \definecolor{subsection}{HTML}{0000FF}
 \definecolor{paragraph}{HTML}{4D4DFF}
-
-\renewcommand{\labelitemi}{\color{section}$\blacktriangleright$}
-
 \sectionfont{\color{section}}
 \subsectionfont{\color{subsection}}
 \paragraphfont{\color{paragraph}}
 
+\renewcommand{\labelitemi}{\color{section}$\blacktriangleright$}	% change default item label
+
+% setup hyperlinks
 \hypersetup{
 	colorlinks	= true,
 	citecolor	= gray,
